@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostr用戶清單</title>
+    <!-- 引用 Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <!-- 引用自訂樣式 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 頁面主要內容 -->
+    <div class="container-fluid">
+        <h1>Nostr用戶清單</h1>
+        <!-- 開關燈模式 -->
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="dark-mode-switch">
+            <label class="custom-control-label" for="dark-mode-switch">暗色模式</label>
+        </div>
+        <!-- 用戶清單表格 -->
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>UserName</th>
+                    <th>PublicKey</th>
+                    <th>Relay</th>
+                </tr>
+            </thead>
+            <tbody id="user-list-body">
+                <!-- 這裡會動態產生用戶清單 -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 引用 Bootstrap JS 和 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous">
+    </script>
+    <!-- 引用自訂 JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>

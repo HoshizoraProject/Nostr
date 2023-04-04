@@ -1,0 +1,30 @@
+/* 設定暗色模式 */
+body.dark-mode {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+}
+
+/* 設定表格欄位寬度 */
+table th:nth-child(1),
+table td:nth-child(1) {
+  width: 30%;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+  width: 50%;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+  width: 20%;
+}
+
+/* 設定 Relay 欄位的打勾和打叉圖式 */
+.relay-check-icon {
+  color: green;
+}
+
+.relay-times-icon {
+  color: red;
+}
