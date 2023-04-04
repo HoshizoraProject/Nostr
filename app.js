@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // 在網頁讀取完成後，自動載入資料到網頁中
-  $.get("users.yml", function (data) {
+  $.get("https://raw.githubusercontent.com/HoshizoraProject/Nostr/main/users.yml", function (data) {
     const users = jsyaml.load(data);
 
     // 產生用戶清單
